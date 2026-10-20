@@ -1,0 +1,12 @@
+node_modules/
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Internal reports and helper scripts
+reports/
+STUDENT_SUBMISSION_GUIDE.md
+build_docx_report.py
+generate_assets.js
+generate_hero_asset.js
+execute_git_publish.py

@@ -1,0 +1,24 @@
+{
+  "name": "uwani-ceylon-organics",
+  "version": "1.0.0",
+  "description": "UWANI Ceylon Organics & Lifestyle Web Application for NSBM Green University",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node database/seed.js"
+  },
+  "keywords": [
+    "nsbm",
+    "ecommerce",
+    "web-development",
+    "sqlite",
+    "express"
+  ],
+  "author": "NSBM Student",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7"
+  }
+}
