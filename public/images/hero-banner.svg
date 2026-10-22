@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14261C"/>
+      <stop offset="40%" stop-color="#1E382A"/>
+      <stop offset="100%" stop-color="#0E1B13"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4E8752" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#2D5A34" stop-opacity="0.05"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="80%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#heroBg)"/>
+  <rect width="1200" height="600" fill="url(#sunGlow)"/>
+
+  <!-- Subtle organic hill contours / mist contours -->
+  <path d="M0 450 Q300 380 600 420 T1200 360 L1200 600 L0 600 Z" fill="#182C21" opacity="0.6"/>
+  <path d="M0 500 Q400 440 800 480 T1200 450 L1200 600 L0 600 Z" fill="#13241B" opacity="0.8"/>
+
+  <!-- Delicate tea leaf botanical silhouettes in background -->
+  <path d="M950 150 C1020 180, 1050 260, 980 320 C910 260, 930 180, 950 150 Z" fill="url(#leafGrad)"/>
+  <path d="M1020 280 C1100 310, 1120 380, 1050 430 C990 380, 1000 320, 1020 280 Z" fill="url(#leafGrad)"/>
+  <path d="M880 280 C820 320, 810 400, 870 440 C930 390, 910 320, 880 280 Z" fill="url(#leafGrad)"/>
+
+  <!-- Geometric accent circles -->
+  <circle cx="850" cy="220" r="160" fill="none" stroke="#D4AF37" stroke-width="1" stroke-dasharray="8,8" opacity="0.35"/>
+  <circle cx="850" cy="220" r="220" fill="none" stroke="#4E8752" stroke-width="1" opacity="0.2"/>
+</svg>

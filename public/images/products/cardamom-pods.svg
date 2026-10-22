@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7FAF4"/>
+      <stop offset="100%" stop-color="#E5EDE0"/>
+    </linearGradient>
+    <linearGradient id="pod" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6E9954"/>
+      <stop offset="50%" stop-color="#8BB86F"/>
+      <stop offset="100%" stop-color="#557D3E"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg8)"/>
+  <ellipse cx="200" cy="350" rx="90" ry="16" fill="#cfdbca" opacity="0.6"/>
+  <!-- Hexagonal Glass Jar -->
+  <polygon points="150,110 250,110 275,170 275,300 125,300 125,170" fill="#FFFFFF" fill-opacity="0.8" stroke="#D1DEC8" stroke-width="2"/>
+  <!-- Cork Stopper -->
+  <polygon points="160,80 240,80 248,110 152,110" fill="#BA8E5E"/>
+  <!-- Cardamom Pods Inside -->
+  <ellipse cx="180" cy="210" rx="14" ry="24" transform="rotate(-25 180 210)" fill="url(#pod)"/>
+  <ellipse cx="220" cy="205" rx="13" ry="22" transform="rotate(20 220 205)" fill="url(#pod)"/>
+  <ellipse cx="200" cy="245" rx="14" ry="24" transform="rotate(5 200 245)" fill="url(#pod)"/>
+  <ellipse cx="165" cy="265" rx="13" ry="22" transform="rotate(-40 165 265)" fill="#5E8746"/>
+  <ellipse cx="235" cy="260" rx="13" ry="22" transform="rotate(35 235 260)" fill="#5E8746"/>
+  <!-- Jar Seal Label -->
+  <rect x="155" y="130" width="90" height="50" rx="3" fill="#2E4A35"/>
+  <text x="200" y="152" font-family="'Cinzel', serif" font-size="10" font-weight="bold" fill="#D4AF37" text-anchor="middle">JUMBO GREEN</text>
+  <text x="200" y="168" font-family="'Inter', sans-serif" font-size="8.5" fill="#FFFFFF" text-anchor="middle">Ceylon Cardamom</text>
+</svg>

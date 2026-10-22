@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF7F2"/>
+      <stop offset="100%" stop-color="#EBE3D8"/>
+    </linearGradient>
+    <linearGradient id="clay" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B85D35"/>
+      <stop offset="50%" stop-color="#D47348"/>
+      <stop offset="100%" stop-color="#9E4B27"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg5)"/>
+  <ellipse cx="200" cy="345" rx="110" ry="16" fill="#dacdbf" opacity="0.6"/>
+  <!-- Saucer -->
+  <ellipse cx="200" cy="315" rx="105" ry="24" fill="#B85D35"/>
+  <ellipse cx="200" cy="312" rx="95" ry="18" fill="#D47348"/>
+  <!-- Handle -->
+  <path d="M260 190 C305 190, 305 260, 260 260" fill="none" stroke="#9E4B27" stroke-width="16" stroke-linecap="round"/>
+  <!-- Cup Body -->
+  <path d="M140 160 L152 280 C154 295, 246 295, 248 280 L260 160 Z" fill="url(#clay)"/>
+  <!-- Cup Rim -->
+  <ellipse cx="200" cy="160" rx="60" ry="16" fill="#E0835B"/>
+  <ellipse cx="200" cy="160" rx="52" ry="12" fill="#5E2C17"/>
+  <!-- Decorative Band -->
+  <path d="M144 210 Q200 230 256 210" fill="none" stroke="#F1D7C6" stroke-width="3" stroke-dasharray="6,4"/>
+  <!-- Steam swirls -->
+  <path d="M185 135 C175 110, 195 90, 185 70" fill="none" stroke="#D47348" stroke-width="2.5" opacity="0.35" stroke-linecap="round"/>
+  <path d="M210 140 C220 115, 205 95, 215 75" fill="none" stroke="#D47348" stroke-width="2.5" opacity="0.35" stroke-linecap="round"/>
+</svg>

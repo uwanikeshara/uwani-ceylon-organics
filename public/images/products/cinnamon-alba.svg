@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF8F3"/>
+      <stop offset="100%" stop-color="#EFE8DD"/>
+    </linearGradient>
+    <linearGradient id="bark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9C5221"/>
+      <stop offset="50%" stop-color="#BD682D"/>
+      <stop offset="100%" stop-color="#7B3A11"/>
+    </linearGradient>
+    <filter id="cin-shadow">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#3d210f" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg2)"/>
+  <ellipse cx="200" cy="350" rx="95" ry="18" fill="#d9cebd" opacity="0.6"/>
+  <!-- Glass Jar -->
+  <g filter="url(#cin-shadow)">
+    <!-- Jar glass back -->
+    <rect x="135" y="105" width="130" height="215" rx="18" fill="#FFFFFF" fill-opacity="0.75" stroke="#E2DACD" stroke-width="2"/>
+    <!-- Cinnamon Sticks Inside -->
+    <rect x="155" y="130" width="14" height="175" rx="6" fill="url(#bark)"/>
+    <rect x="175" y="125" width="13" height="180" rx="5" fill="#884217"/>
+    <rect x="193" y="128" width="15" height="178" rx="6" fill="url(#bark)"/>
+    <rect x="213" y="124" width="14" height="182" rx="5" fill="#A85923"/>
+    <rect x="231" y="132" width="12" height="172" rx="5" fill="#753510"/>
+    <!-- Bamboo Lid -->
+    <rect x="130" y="85" width="140" height="24" rx="5" fill="#C59A6F"/>
+    <rect x="130" y="103" width="140" height="6" fill="#A3784F"/>
+    <!-- Kraft Label -->
+    <rect x="145" y="210" width="110" height="85" rx="4" fill="#E6D3B3" stroke="#CBB48E" stroke-width="1.5"/>
+    <text x="200" y="234" font-family="'Cinzel', serif" font-size="10" font-weight="bold" fill="#3D210F" text-anchor="middle">UWANI HERITAGE</text>
+    <text x="200" y="250" font-family="'Cinzel', serif" font-size="12" font-weight="bold" fill="#7B3A11" text-anchor="middle">ALBA CINNAMON</text>
+    <text x="200" y="265" font-family="'Inter', sans-serif" font-size="8" fill="#4A301E" text-anchor="middle">Pure Ceylon Cinnamomum</text>
+    <text x="200" y="280" font-family="'Inter', sans-serif" font-size="8" font-weight="600" fill="#2E6930" text-anchor="middle">100% ORGANIC CERTIFIED</text>
+  </g>
+</svg>

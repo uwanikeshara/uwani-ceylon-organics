@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBFBF9"/>
+      <stop offset="100%" stop-color="#EEECE6"/>
+    </linearGradient>
+    <linearGradient id="oil" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FCF9ED"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F0DC"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg4)"/>
+  <ellipse cx="200" cy="355" rx="80" ry="16" fill="#dedad0" opacity="0.6"/>
+  <!-- Bottle Neck & Cork -->
+  <rect x="184" y="65" width="32" height="30" rx="3" fill="#C5A059"/>
+  <rect x="180" y="90" width="40" height="35" rx="4" fill="#FFFFFF" stroke="#DDD6C8" stroke-width="2"/>
+  <!-- Bottle Body -->
+  <rect x="140" y="120" width="120" height="205" rx="20" fill="url(#oil)" stroke="#E2DCCE" stroke-width="2"/>
+  <!-- Minimalist Label -->
+  <rect x="152" y="160" width="96" height="120" rx="3" fill="#FFFFFF" stroke="#E8E4DA" stroke-width="1"/>
+  <text x="200" y="190" font-family="'Cinzel', serif" font-size="11" font-weight="bold" fill="#2E3D30" text-anchor="middle" letter-spacing="1">UWANI</text>
+  <text x="200" y="206" font-family="'Inter', sans-serif" font-size="8" fill="#7A6855" text-anchor="middle">PURE COCONUT</text>
+  <line x1="168" y1="214" x2="232" y2="214" stroke="#C5A059" stroke-width="1"/>
+  <text x="200" y="232" font-family="'Cinzel', serif" font-size="12" font-weight="bold" fill="#3A3025" text-anchor="middle">Virgin Oil</text>
+  <text x="200" y="248" font-family="'Inter', sans-serif" font-size="7.5" fill="#6B655B" text-anchor="middle">Cold-Pressed Centrifuged</text>
+  <text x="200" y="266" font-family="'Inter', sans-serif" font-size="8" font-weight="bold" fill="#3D5A40" text-anchor="middle">500ml • 100% RAW</text>
+</svg>

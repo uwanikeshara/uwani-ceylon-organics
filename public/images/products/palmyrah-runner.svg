@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF8F3"/>
+      <stop offset="100%" stop-color="#EDE6D8"/>
+    </linearGradient>
+    <pattern id="weave" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#E4D2B8"/>
+      <path d="M0 0 L10 10 L0 20 Z" fill="#D6BF9E"/>
+      <path d="M10 10 L20 0 L20 20 Z" fill="#CBB28D"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg7)"/>
+  <ellipse cx="200" cy="340" rx="95" ry="15" fill="#d8cbba" opacity="0.6"/>
+  <!-- Rolled Runner Roll -->
+  <rect x="130" y="110" width="140" height="200" rx="8" fill="url(#weave)" stroke="#BFA37D" stroke-width="2"/>
+  <!-- Fringes -->
+  <line x1="130" y1="310" x2="130" y2="330" stroke="#AA8C64" stroke-width="2"/>
+  <line x1="145" y1="310" x2="145" y2="330" stroke="#AA8C64" stroke-width="2"/>
+  <line x1="160" y1="310" x2="160" y2="330" stroke="#AA8C64" stroke-width="2"/>
+  <line x1="175" y1="310" x2="175" y2="330" stroke="#AA8C64" stroke-width="2"/>
+  <line x1="190" y1="310" x2="190" y2="330" stroke="#AA8C64" stroke-width="2"/>
+  <line x1="205" y1="310" x2="205" y2="330" stroke="#AA8C64" stroke-width="2"/>
+  <line x1="220" y1="310" x2="220" y2="330" stroke="#AA8C64" stroke-width="2"/>
+  <line x1="235" y1="310" x2="235" y2="330" stroke="#AA8C64" stroke-width="2"/>
+  <line x1="250" y1="310" x2="250" y2="330" stroke="#AA8C64" stroke-width="2"/>
+  <line x1="265" y1="310" x2="265" y2="330" stroke="#AA8C64" stroke-width="2"/>
+  <!-- Tie Ribbon -->
+  <rect x="120" y="185" width="160" height="45" rx="3" fill="#2E4A35"/>
+  <text x="200" y="206" font-family="'Cinzel', serif" font-size="10" font-weight="bold" fill="#E2DACD" text-anchor="middle" letter-spacing="1">UWANI ARTISAN</text>
+  <text x="200" y="222" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#A8D5B0" text-anchor="middle">Palmyrah Table Runner</text>
+</svg>
