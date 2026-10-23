@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UWANI Ceylon Organics & Lifestyle | Sustainable Artisanal Living</title>
+    <meta name="description" content="Discover pure single-estate Ceylon teas, Alba grade spices, and handcrafted terracotta living goods sustainably cultivated in Sri Lanka.">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. Top Announcement Bar -->
+    <aside class="top-bar" aria-label="Announcement">
+        <div class="container top-bar-content">
+            <div class="top-bar-left">
+                <span><span class="top-bar-badge">HARVEST 2026</span> Direct fair-trade harvest shipped worldwide from Nuwara Eliya &amp; Matale</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="currency-select-wrap">
+                    <i class="ri-global-line"></i>
+                    <select id="currency-select-top" class="currency-dropdown" aria-label="Select Currency">
+                        <option value="LKR" selected>LKR (Rs.)</option>
+                        <option value="USD">USD ($)</option>
+                    </select>
+                </div>
+                <a href="about.html"><i class="ri-leaf-line"></i> Our Ethical Impact</a>
+                <a href="admin.html" style="color: var(--gold-light); font-weight: 600;"><i class="ri-shield-keyhole-line"></i> Admin Portal</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- 2. Sticky Glass Header -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand-logo" aria-label="UWANI Homepage">
+                <div class="logo-symbol">U</div>
+                <div class="brand-text-wrap">
+                    <span class="brand-title">UWANI</span>
+                    <span class="brand-subtitle">CEYLON ORGANICS</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="shop.html" class="nav-link">Shop Catalog</a>
+                <a href="about.html" class="nav-link">Our Heritage</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="currency-toggle-pill" id="header-currency-toggle" title="Toggle Currency (LKR / USD)" aria-label="Currency Toggle">
+                    <span class="curr-flag">🇱🇰</span>
+                    <span class="curr-code">LKR (Rs.)</span>
+                </button>
+                <a href="shop.html" class="action-btn" title="Search Products" aria-label="Search">
+                    <i class="ri-search-line"></i>
+                </a>
+                <button class="action-btn cart-open-btn" title="View Shopping Basket" aria-label="Cart">
+                    <i class="ri-shopping-basket-line"></i>
+                    <span class="badge-count cart-count-badge" style="display: none;">0</span>
+                </button>
+                <a href="admin.html" class="admin-portal-link" title="Open Admin Management System">
+                    <i class="ri-dashboard-line"></i>
+                    <span>Admin Panel</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="ri-menu-4-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. Hero Section -->
+    <main>
+        <section class="hero-section">
+            <div class="hero-bg-accent"></div>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <i class="ri-sparkling-fill"></i> Sourced Ethically from Sri Lanka
+                    </div>
+                    <h1 class="hero-title">
+                        Pure Earth. <br>
+                        Artisanal Roots. <br>
+                        <span class="highlight">Conscious Living.</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Immerse in single-estate high-elevation Ceylon Pekoe teas, organic sun-dried true cinnamon quills, and traditional hand-thrown terracotta living wares crafted in harmony with nature.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="shop.html" class="btn btn-gold">
+                            <span>Explore Catalog</span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                        <a href="about.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.4); color: #FFFFFF;">
+                            <span>Our Story</span>
+                            <i class="ri-plant-line"></i>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Organic Certified</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>42+</h3>
+                            <p>Village Farmers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>0%</h3>
+                            <p>Synthetic Additives</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual-card">
+                    <img src="images/products/tea-pekoe.svg" alt="Royal Nuwara Eliya Pekoe Tea Canister">
+                    <div class="hero-floating-pill">
+                        <div class="pill-icon">
+                            <i class="ri-award-line"></i>
+                        </div>
+                        <div class="pill-text">
+                            <h5>Pedro Single Estate</h5>
+                            <p>Nuwara Eliya 6,200ft Altitude</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Trust Pillars Bar -->
+        <section class="pillars-bar">
+            <div class="container">
+                <div class="pillars-grid">
+                    <div class="pillar-item">
+                        <div class="pillar-icon-box"><i class="ri-leaf-line"></i></div>
+                        <div class="pillar-text">
+                            <h4>100% Single Origin</h4>
+                            <p>Directly traceable to Sri Lankan estates</p>
+                        </div>
+                    </div>
+                    <div class="pillar-item">
+                        <div class="pillar-icon-box"><i class="ri-hand-heart-line"></i></div>
+                        <div class="pillar-text">
+                            <h4>Fair Trade Certified</h4>
+                            <p>Empowering rural farming cooperatives</p>
+                        </div>
+                    </div>
+                    <div class="pillar-item">
+                        <div class="pillar-icon-box"><i class="ri-recycle-line"></i></div>
+                        <div class="pillar-text">
+                            <h4>Zero-Plastic Pledges</h4>
+                            <p>Compostable tins &amp; terracotta packaging</p>
+                        </div>
+                    </div>
+                    <div class="pillar-item">
+                        <div class="pillar-icon-box"><i class="ri-truck-line"></i></div>
+                        <div class="pillar-text">
+                            <h4>Islandwide &amp; Global</h4>
+                            <p>Speedy carbon-neutral dispatch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Featured Categories -->
+        <section class="categories-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-tag">Curated Collections</span>
+                    <h2 class="section-title">Explore Sustainable Categories</h2>
+                    <p class="section-subtitle center-block">From mist-laden central peaks to coastal coconut groves, discover natural Ceylon goodness crafted for mindful daily rituals.</p>
+                </div>
+
+                <div class="categories-grid" id="categories-container">
+                    <!-- Populated dynamically via main.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Featured Products Grid -->
+        <section class="products-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-tag">Handpicked Selections</span>
+                    <h2 class="section-title">Our Featured Harvest Products</h2>
+                    <p class="section-subtitle center-block">Ethically harvested, lab-tested, and packaged at source to preserve maximum vital aroma and natural therapeutic essence.</p>
+                </div>
+
+                <div class="products-grid" id="featured-products-grid" style="margin-top: 40px;">
+                    <!-- Populated dynamically via main.js -->
+                </div>
+
+                <div class="text-center" style="margin-top: 48px;">
+                    <a href="shop.html" class="btn btn-primary">
+                        <span>View All Products in Catalog</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Brand Heritage & Sustainability Story -->
+        <section class="story-banner-section">
+            <div class="container story-grid">
+                <div class="story-content">
+                    <span class="section-tag" style="background: rgba(197, 154, 69, 0.2); color: var(--gold-light);">Ethical Agroforestry</span>
+                    <h2>Rooted in Ceylon's Heritage, Nurtured with Respect</h2>
+                    <p>
+                        UWANI was conceived at the intersection of traditional Sri Lankan agro-wisdom and modern circular sustainability. We collaborate directly with over 40 generational farming families across Nuwara Eliya, Matale, and Kegalle.
+                    </p>
+                    <p>
+                        By eliminating commercial intermediaries and ensuring guaranteed above-market living wages, we empower local smallholders to preserve ancestral forest farming methods without synthetic chemicals or soil degradation.
+                    </p>
+                    <div class="impact-list">
+                        <div class="impact-item">
+                            <div class="impact-icon"><i class="ri-check-double-line"></i></div>
+                            <div class="impact-text">
+                                <h4>Generational Agroforestry</h4>
+                                <p>Biodiverse polyculture that enriches native Sri Lankan topsoil naturally.</p>
+                            </div>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-icon"><i class="ri-shield-star-line"></i></div>
+                            <div class="impact-text">
+                                <h4>Community Artisan Fund</h4>
+                                <p>5% of every order supports village pottery collectives in Molagoda.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-imagery-card">
+                    <div class="story-card-inner">
+                        <div class="emblem"><i class="ri-leaf-fill"></i></div>
+                        <blockquote>
+                            "True luxury is not defined by excess, but by purity, ethical conscience, and reverence for the soil."
+                        </blockquote>
+                        <cite>— The UWANI Sustainability Philosophy</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-tag">Customer Reflections</span>
+                    <h2 class="section-title">Cherished by Conscious Patrons</h2>
+                    <p class="section-subtitle center-block">Read genuine thoughts from tea connoisseurs, culinary enthusiasts, and eco-conscious households across the globe.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The Royal Nuwara Eliya Pekoe has an unbelievable brightness and natural floral notes that put commercial supermarket teas to shame. The terracotta mug also feels wonderful in hand."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">DK</div>
+                            <div class="author-meta">
+                                <h5>Dr. Kanchana Wickrema</h5>
+                                <p>Colombo, Sri Lanka</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The Alba grade Ceylon cinnamon is exquisitely thin and fragrant. You immediately taste the sweet, delicate real cinnamon flavor without the harsh bitterness of cassia bark."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SL</div>
+                            <div class="author-meta">
+                                <h5>Simon Laurent</h5>
+                                <p>Melbourne, Australia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "As an avid home cook, the Matale black peppercorns and cold-pressed virgin coconut oil are absolute kitchen staples now. Beautiful packaging and lightning fast service."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">NF</div>
+                            <div class="author-meta">
+                                <h5>Nadeesha Fernando</h5>
+                                <p>Kandy, Sri Lanka</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-box">
+                    <div class="newsletter-text">
+                        <h3>Join the UWANI Green Circle</h3>
+                        <p>Subscribe for seasonal single-estate harvest notes, traditional botanical wellness recipes, and exclusive fair-trade offers.</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-gold">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 10. Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <div class="logo-symbol" style="background: var(--gold); color: #112217;">U</div>
+                        <div class="brand-text-wrap">
+                            <span class="brand-title" style="color: #fff;">UWANI</span>
+                            <span class="brand-subtitle" style="color: var(--gold-light);">CEYLON ORGANICS</span>
+                        </div>
+                    </div>
+                    <p>
+                        Celebrating the rich agricultural heritage of Sri Lanka through sustainably sourced loose teas, pure single-origin spices, and handcrafted lifestyle essentials.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop Catalog</a></li>
+                        <li><a href="about.html">Our Heritage &amp; Story</a></li>
+                        <li><a href="contact.html">Customer Inquiries</a></li>
+                        <li><a href="admin.html">Admin Management</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Our Collections</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=ceylon-herbal-teas">Ceylon Herbal Teas</a></li>
+                        <li><a href="shop.html?category=pure-ceylon-spices">Pure Ceylon Spices</a></li>
+                        <li><a href="shop.html?category=handcrafted-homeware">Handcrafted Ceramics</a></li>
+                        <li><a href="shop.html?category=organic-coconut-wellness">Virgin Coconut Care</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Ceylon Estates &amp; Care</h4>
+                    <ul class="footer-links" style="font-size: 0.88rem; color: #CBD5CE;">
+                        <li><i class="ri-map-pin-2-line" style="color: var(--gold-light); margin-right: 6px;"></i> 42/A Horton Place, Colombo 07</li>
+                        <li><i class="ri-plant-line" style="color: var(--gold-light); margin-right: 6px;"></i> Pedro Estate, Nuwara Eliya</li>
+                        <li><i class="ri-phone-line" style="color: var(--gold-light); margin-right: 6px;"></i> +94 11 289 4500 (Concierge)</li>
+                        <li><i class="ri-mail-line" style="color: var(--gold-light); margin-right: 6px;"></i> concierge@uwani.lk</li>
+                        <li><i class="ri-shield-check-line" style="color: var(--gold-light); margin-right: 6px;"></i> 100% Certified Ceylon Organic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 UWANI Ceylon Organics (Pvt) Ltd. Handcrafted in Sri Lanka. All rights reserved.
+                </div>
+                <div class="footer-trust-badges">
+                    <span><i class="ri-shield-check-line" style="color: var(--gold-light);"></i> Single-Origin Ceylon</span>
+                    <span class="footer-sep">•</span>
+                    <span><i class="ri-hand-heart-line" style="color: var(--gold-light);"></i> Direct Fair-Trade</span>
+                    <span class="footer-sep">•</span>
+                    <span><i class="ri-earth-line" style="color: var(--gold-light);"></i> Worldwide Air Shipping</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer Modal -->
+    <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+        <aside class="cart-drawer" aria-label="Shopping Cart">
+            <div class="cart-header">
+                <h3 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: var(--primary-dark);">
+                    Your Basket (<span class="cart-count-badge" style="display: inline;">0</span>)
+                </h3>
+                <button class="modal-close-btn" id="cart-drawer-close" aria-label="Close Basket">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="cart-items-container" id="cart-drawer-items">
+                <!-- Dynamically populated -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-summary-line">
+                    <span>Subtotal:</span>
+                    <strong id="cart-drawer-subtotal">$0.00</strong>
+                </div>
+                <div class="cart-summary-line" style="font-size: 0.85rem;">
+                    <span>Delivery:</span>
+                    <span>Calculated at checkout (Free over $50)</span>
+                </div>
+                <div class="cart-total-line">
+                    <span>Estimated Total:</span>
+                    <strong id="cart-drawer-total" style="color: var(--primary);">$0.00</strong>
+                </div>
+                <button class="btn btn-primary btn-block" id="drawer-checkout-btn" style="margin-top: 18px;">
+                    Proceed to Checkout <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal-overlay" id="checkout-modal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3 class="modal-title">Complete Your Order (DML INSERT)</h3>
+                <button class="modal-close-btn" id="checkout-modal-close" aria-label="Close Modal">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="checkout-form">
+                    <h5 style="margin-bottom: 12px; font-weight: 700; color: var(--primary);">1. Customer Details</h5>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="order_name">Full Name *</label>
+                            <input type="text" id="order_name" class="form-control" placeholder="e.g. Ruwan Wickramasinghe" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="order_email">Email Address *</label>
+                            <input type="email" id="order_email" class="form-control" placeholder="ruwan@example.lk" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="order_phone">Phone Number *</label>
+                        <input type="tel" id="order_phone" class="form-control" placeholder="+94 77 123 4567" required>
+                    </div>
+
+                    <h5 style="margin: 20px 0 12px; font-weight: 700; color: var(--primary);">2. Shipping Address</h5>
+                    <div class="form-group">
+                        <label class="form-label" for="order_address">Street Address *</label>
+                        <input type="text" id="order_address" class="form-control" placeholder="128/4 Bauddhaloka Mawatha" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="order_city">City *</label>
+                            <input type="text" id="order_city" class="form-control" placeholder="Colombo" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="order_postal">Postal Code</label>
+                            <input type="text" id="order_postal" class="form-control" placeholder="00700">
+                        </div>
+                    </div>
+
+                    <h5 style="margin: 20px 0 12px; font-weight: 700; color: var(--primary);">3. Payment Method</h5>
+                    <div class="form-group">
+                        <select id="order_payment" class="form-control">
+                            <option value="Cash on Delivery">Cash on Delivery (Islandwide Sri Lanka)</option>
+                            <option value="Credit / Debit Card (Online)">Credit / Debit Card (Online Gateway)</option>
+                            <option value="Direct Bank Transfer">Direct Bank Transfer (BOC / Sampath)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="order_notes">Delivery Instructions (Optional)</label>
+                        <input type="text" id="order_notes" class="form-control" placeholder="Special gate code or call upon arrival">
+                    </div>
+
+                    <div style="background: var(--bg-sand); padding: 16px; border-radius: var(--radius-md); margin: 20px 0;">
+                        <h5 style="font-weight: 700; margin-bottom: 8px;">Order Summary</h5>
+                        <div id="checkout-summary-list"></div>
+                        <div style="display: flex; justify-content: space-between; margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border-subtle); font-weight: 700;">
+                            <span>Total Payable:</span>
+                            <span id="checkout-summary-total" style="color: var(--primary); font-size: 1.15rem;">$0.00</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="place-order-btn">
+                        Confirm &amp; Place Order
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal-overlay" id="quick-view-modal">
+        <div class="modal-box" style="max-width: 750px;">
+            <div class="modal-header">
+                <h3 class="modal-title">Product Details</h3>
+                <button class="modal-close-btn" id="quick-view-close" aria-label="Close Quick View">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="quick-view-content">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
