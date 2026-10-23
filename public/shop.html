@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Sustainable Ceylon Catalog | UWANI Organics</title>
+    <meta name="description" content="Browse our organic Ceylon teas, genuine Alba grade cinnamon quills, traditional terracotta kitchenware, and cold-pressed coconut care products.">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <aside class="top-bar" aria-label="Announcement">
+        <div class="container top-bar-content">
+            <div class="top-bar-left">
+                <span><span class="top-bar-badge">OFFER</span> Use discount coupon <strong>GREEN10</strong> at checkout for 10% off your entire order!</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="currency-select-wrap">
+                    <i class="ri-global-line"></i>
+                    <select id="currency-select-top" class="currency-dropdown" aria-label="Select Currency">
+                        <option value="LKR" selected>LKR (Rs.)</option>
+                        <option value="USD">USD ($)</option>
+                    </select>
+                </div>
+                <a href="about.html"><i class="ri-leaf-line"></i> Ethical Sourcing</a>
+                <a href="admin.html" style="color: var(--gold-light); font-weight: 600;"><i class="ri-shield-keyhole-line"></i> Admin Portal</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Sticky Header -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand-logo" aria-label="UWANI Homepage">
+                <div class="logo-symbol">U</div>
+                <div class="brand-text-wrap">
+                    <span class="brand-title">UWANI</span>
+                    <span class="brand-subtitle">CEYLON ORGANICS</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link active">Shop Catalog</a>
+                <a href="about.html" class="nav-link">Our Heritage</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="currency-toggle-pill" id="header-currency-toggle" title="Toggle Currency (LKR / USD)" aria-label="Currency Toggle">
+                    <span class="curr-flag">🇱🇰</span>
+                    <span class="curr-code">LKR (Rs.)</span>
+                </button>
+                <button class="action-btn cart-open-btn" title="View Shopping Basket" aria-label="Cart">
+                    <i class="ri-shopping-basket-line"></i>
+                    <span class="badge-count cart-count-badge" style="display: none;">0</span>
+                </button>
+                <a href="admin.html" class="admin-portal-link" title="Open Admin Management System">
+                    <i class="ri-dashboard-line"></i>
+                    <span>Admin Panel</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="ri-menu-4-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Shop Header Banner -->
+        <section style="background: var(--primary-dark); color: #fff; padding: 60px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+            <div class="container text-center">
+                <span class="section-tag" style="background: rgba(197, 154, 69, 0.2); color: var(--gold-light);">Single-Origin Harvest</span>
+                <h1 style="color: #fff; font-size: 2.8rem; margin: 12px 0 10px;">The Ceylon Catalog</h1>
+                <p style="color: #CAD5CE; max-width: 600px; margin: 0 auto; font-size: 1.05rem;">
+                    Discover artisanal teas, restorative botanical infusions, rare spices, and traditional village crafts sourced directly from ethical Sri Lankan growers.
+                </p>
+            </div>
+        </section>
+
+        <!-- Catalog Controls & Products Section -->
+        <section class="products-section" style="padding-top: 40px; min-height: 70vh;">
+            <div class="container">
+                <!-- Filter & Search Controls Bar -->
+                <div class="products-filter-bar">
+                    <div class="filter-pills">
+                        <button class="filter-pill active" data-category="all">All Products</button>
+                        <button class="filter-pill" data-category="ceylon-herbal-teas">Herbal Teas</button>
+                        <button class="filter-pill" data-category="pure-ceylon-spices">Pure Spices</button>
+                        <button class="filter-pill" data-category="handcrafted-homeware">Artisan Homeware</button>
+                        <button class="filter-pill" data-category="organic-coconut-wellness">Coconut Wellness</button>
+                    </div>
+
+                    <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap;">
+                        <div class="catalog-search-wrap">
+                            <i class="ri-search-line" style="color: var(--text-light); margin-right: 6px;"></i>
+                            <input type="text" id="shop-search-input" placeholder="Search tea, cinnamon, oil..." aria-label="Search Catalog">
+                        </div>
+
+                        <select id="shop-sort-select" style="padding: 10px 16px; border-radius: var(--radius-pill); border: 1px solid var(--border-light); font-size: 0.88rem; background: var(--bg-surface); color: var(--primary-dark); font-weight: 600; outline: none; cursor: pointer;">
+                            <option value="featured">Featured First</option>
+                            <option value="price_asc">Price: Low to High</option>
+                            <option value="price_desc">Price: High to Low</option>
+                            <option value="rating">Highest Rated</option>
+                            <option value="name">Name (A - Z)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Results Counter -->
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; font-size: 0.88rem; color: var(--text-muted);">
+                    <span id="catalog-results-count">Loading products...</span>
+                    <span><i class="ri-shield-check-line" style="color: var(--success);"></i> Direct from SQLite Database (DML SELECT)</span>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid" id="shop-products-grid">
+                    <!-- Populated dynamically via shop.js -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <div class="logo-symbol" style="background: var(--gold); color: #112217;">U</div>
+                        <div class="brand-text-wrap">
+                            <span class="brand-title" style="color: #fff;">UWANI</span>
+                            <span class="brand-subtitle" style="color: var(--gold-light);">CEYLON ORGANICS</span>
+                        </div>
+                    </div>
+                    <p>
+                        Preserving Sri Lanka's indigenous agricultural legacy through sustainable smallholder partnerships and zero-compromise purity.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop Catalog</a></li>
+                        <li><a href="about.html">Our Heritage &amp; Story</a></li>
+                        <li><a href="contact.html">Customer Inquiries</a></li>
+                        <li><a href="admin.html">Admin Management</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Our Collections</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=ceylon-herbal-teas">Ceylon Herbal Teas</a></li>
+                        <li><a href="shop.html?category=pure-ceylon-spices">Pure Ceylon Spices</a></li>
+                        <li><a href="shop.html?category=handcrafted-homeware">Handcrafted Ceramics</a></li>
+                        <li><a href="shop.html?category=organic-coconut-wellness">Virgin Coconut Care</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Ceylon Estates &amp; Care</h4>
+                    <ul class="footer-links" style="font-size: 0.88rem; color: #CBD5CE;">
+                        <li><i class="ri-map-pin-2-line" style="color: var(--gold-light); margin-right: 6px;"></i> 42/A Horton Place, Colombo 07</li>
+                        <li><i class="ri-plant-line" style="color: var(--gold-light); margin-right: 6px;"></i> Pedro Estate, Nuwara Eliya</li>
+                        <li><i class="ri-phone-line" style="color: var(--gold-light); margin-right: 6px;"></i> +94 11 289 4500 (Concierge)</li>
+                        <li><i class="ri-mail-line" style="color: var(--gold-light); margin-right: 6px;"></i> concierge@uwani.lk</li>
+                        <li><i class="ri-shield-check-line" style="color: var(--gold-light); margin-right: 6px;"></i> 100% Certified Ceylon Organic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 UWANI Ceylon Organics (Pvt) Ltd. Handcrafted in Sri Lanka. All rights reserved.</div>
+                <div class="footer-trust-badges">
+                    <span><i class="ri-shield-check-line" style="color: var(--gold-light);"></i> Single-Origin Ceylon</span>
+                    <span class="footer-sep">•</span>
+                    <span><i class="ri-hand-heart-line" style="color: var(--gold-light);"></i> Direct Fair-Trade</span>
+                    <span class="footer-sep">•</span>
+                    <span><i class="ri-earth-line" style="color: var(--gold-light);"></i> Worldwide Air Shipping</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+        <aside class="cart-drawer" aria-label="Shopping Cart">
+            <div class="cart-header">
+                <h3 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: var(--primary-dark);">
+                    Your Basket (<span class="cart-count-badge" style="display: inline;">0</span>)
+                </h3>
+                <button class="modal-close-btn" id="cart-drawer-close" aria-label="Close Basket">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="cart-items-container" id="cart-drawer-items"></div>
+            <div class="cart-footer">
+                <div class="cart-summary-line">
+                    <span>Subtotal:</span>
+                    <strong id="cart-drawer-subtotal">$0.00</strong>
+                </div>
+                <div class="cart-summary-line" style="font-size: 0.85rem;">
+                    <span>Delivery:</span>
+                    <span>Calculated at checkout (Free over $50)</span>
+                </div>
+                <div class="cart-total-line">
+                    <span>Estimated Total:</span>
+                    <strong id="cart-drawer-total" style="color: var(--primary);">$0.00</strong>
+                </div>
+                <button class="btn btn-primary btn-block" id="drawer-checkout-btn" style="margin-top: 18px;">
+                    Proceed to Checkout <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal-overlay" id="checkout-modal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3 class="modal-title">Complete Your Order (DML INSERT)</h3>
+                <button class="modal-close-btn" id="checkout-modal-close" aria-label="Close Modal">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="checkout-form">
+                    <h5 style="margin-bottom: 12px; font-weight: 700; color: var(--primary);">1. Customer Details</h5>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="order_name">Full Name *</label>
+                            <input type="text" id="order_name" class="form-control" placeholder="e.g. Ruwan Wickramasinghe" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="order_email">Email Address *</label>
+                            <input type="email" id="order_email" class="form-control" placeholder="ruwan@example.lk" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="order_phone">Phone Number *</label>
+                        <input type="tel" id="order_phone" class="form-control" placeholder="+94 77 123 4567" required>
+                    </div>
+
+                    <h5 style="margin: 20px 0 12px; font-weight: 700; color: var(--primary);">2. Shipping Address</h5>
+                    <div class="form-group">
+                        <label class="form-label" for="order_address">Street Address *</label>
+                        <input type="text" id="order_address" class="form-control" placeholder="128/4 Bauddhaloka Mawatha" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="order_city">City *</label>
+                            <input type="text" id="order_city" class="form-control" placeholder="Colombo" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="order_postal">Postal Code</label>
+                            <input type="text" id="order_postal" class="form-control" placeholder="00700">
+                        </div>
+                    </div>
+
+                    <h5 style="margin: 20px 0 12px; font-weight: 700; color: var(--primary);">3. Payment Method</h5>
+                    <div class="form-group">
+                        <select id="order_payment" class="form-control">
+                            <option value="Cash on Delivery">Cash on Delivery (Islandwide Sri Lanka)</option>
+                            <option value="Credit / Debit Card (Online)">Credit / Debit Card (Online Gateway)</option>
+                            <option value="Direct Bank Transfer">Direct Bank Transfer (BOC / Sampath)</option>
+                        </select>
+                    </div>
+
+                    <div style="background: var(--bg-sand); padding: 16px; border-radius: var(--radius-md); margin: 20px 0;">
+                        <h5 style="font-weight: 700; margin-bottom: 8px;">Order Summary</h5>
+                        <div id="checkout-summary-list"></div>
+                        <div style="display: flex; justify-content: space-between; margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border-subtle); font-weight: 700;">
+                            <span>Total Payable:</span>
+                            <span id="checkout-summary-total" style="color: var(--primary); font-size: 1.15rem;">$0.00</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="place-order-btn">
+                        Confirm &amp; Place Order
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal-overlay" id="quick-view-modal">
+        <div class="modal-box" style="max-width: 750px;">
+            <div class="modal-header">
+                <h3 class="modal-title">Product Details</h3>
+                <button class="modal-close-btn" id="quick-view-close" aria-label="Close Quick View">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="quick-view-content"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>
