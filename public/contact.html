@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Customer Relations | UWANI Ceylon Organics</title>
+    <meta name="description" content="Get in touch with UWANI Ceylon Organics for customer support, wholesale partnerships, or questions regarding sustainable agricultural sourcing.">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .faq-item {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            margin-bottom: 14px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .faq-header {
+            padding: 18px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--primary-dark);
+            user-select: none;
+        }
+        .faq-header i {
+            transition: transform 0.25s ease;
+            font-size: 1.2rem;
+            color: var(--gold-dark);
+        }
+        .faq-body {
+            display: none;
+            padding: 0 24px 20px;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .faq-item.active .faq-body {
+            display: block;
+        }
+        .faq-item.active .faq-header i {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <aside class="top-bar" aria-label="Announcement">
+        <div class="container top-bar-content">
+            <div class="top-bar-left">
+                <span><span class="top-bar-badge">CUSTOMER DESK</span> Live inquiry ticketing connected directly to our SQLite database</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="currency-select-wrap">
+                    <i class="ri-global-line"></i>
+                    <select id="currency-select-top" class="currency-dropdown" aria-label="Select Currency">
+                        <option value="LKR" selected>LKR (Rs.)</option>
+                        <option value="USD">USD ($)</option>
+                    </select>
+                </div>
+                <a href="shop.html"><i class="ri-shopping-basket-line"></i> View Products</a>
+                <a href="admin.html" style="color: var(--gold-light); font-weight: 600;"><i class="ri-shield-keyhole-line"></i> Admin Portal</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Sticky Header -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand-logo" aria-label="UWANI Homepage">
+                <div class="logo-symbol">U</div>
+                <div class="brand-text-wrap">
+                    <span class="brand-title">UWANI</span>
+                    <span class="brand-subtitle">CEYLON ORGANICS</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop Catalog</a>
+                <a href="about.html" class="nav-link">Our Heritage</a>
+                <a href="contact.html" class="nav-link active">Contact Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="currency-toggle-pill" id="header-currency-toggle" title="Toggle Currency (LKR / USD)" aria-label="Currency Toggle">
+                    <span class="curr-flag">🇱🇰</span>
+                    <span class="curr-code">LKR (Rs.)</span>
+                </button>
+                <button class="action-btn cart-open-btn" title="View Shopping Basket" aria-label="Cart">
+                    <i class="ri-shopping-basket-line"></i>
+                    <span class="badge-count cart-count-badge" style="display: none;">0</span>
+                </button>
+                <a href="admin.html" class="admin-portal-link" title="Open Admin Management System">
+                    <i class="ri-dashboard-line"></i>
+                    <span>Admin Panel</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="ri-menu-4-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section style="background: var(--primary-dark); color: #fff; padding: 60px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+            <div class="container text-center">
+                <span class="section-tag" style="background: rgba(197, 154, 69, 0.2); color: var(--gold-light);">Direct Assistance</span>
+                <h1 style="color: #fff; font-size: 2.8rem; margin: 12px 0 10px;">Connect with UWANI</h1>
+                <p style="color: #CAD5CE; max-width: 600px; margin: 0 auto; font-size: 1.05rem;">
+                    Have questions regarding harvest availability, wholesale exports, or order status? We are always glad to assist you.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Cards & Form Grid -->
+        <section style="padding: 70px 0; background: var(--bg-cream);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 50px; align-items: start;">
+                    
+                    <!-- Left: Contact Details & Info -->
+                    <div>
+                        <span class="section-tag">Reach Our Team</span>
+                        <h2 class="section-title">We’re Here to Help</h2>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 30px;">
+                            Whether you represent a specialty tea cafe seeking single-estate wholesale supply or an individual customer, reach out via the inquiry form or directly through our official channels.
+                        </p>
+
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <div style="background: var(--bg-surface); padding: 22px; border-radius: var(--radius-md); border: 1px solid var(--border-light); display: flex; gap: 16px; align-items: center;">
+                                <div style="width: 48px; height: 48px; border-radius: 10px; background: #E8F5E9; color: #2E7D32; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--primary-dark);">Operational Campus</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 2px;">
+                                        NSBM Green University Town, Pitipana, Homagama, Sri Lanka
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div style="background: var(--bg-surface); padding: 22px; border-radius: var(--radius-md); border: 1px solid var(--border-light); display: flex; gap: 16px; align-items: center;">
+                                <div style="width: 48px; height: 48px; border-radius: 10px; background: #FFF8E1; color: #F57F17; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;">
+                                    <i class="ri-phone-line"></i>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--primary-dark);">Telephone &amp; WhatsApp</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 2px;">
+                                        +94 11 544 5000 / +94 77 123 4567
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div style="background: var(--bg-surface); padding: 22px; border-radius: var(--radius-md); border: 1px solid var(--border-light); display: flex; gap: 16px; align-items: center;">
+                                <div style="width: 48px; height: 48px; border-radius: 10px; background: #E3F2FD; color: #1565C0; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;">
+                                    <i class="ri-mail-send-line"></i>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--primary-dark);">Electronic Inquiries</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 2px;">
+                                        inquiries@uwani.lk / naji@nsbm.ac.lk
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div style="background: var(--bg-surface); padding: 22px; border-radius: var(--radius-md); border: 1px solid var(--border-light); display: flex; gap: 16px; align-items: center;">
+                                <div style="width: 48px; height: 48px; border-radius: 10px; background: #EDE7F6; color: #512DA8; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;">
+                                    <i class="ri-time-line"></i>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--primary-dark);">Dispatch &amp; Support Hours</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 2px;">
+                                        Monday – Friday: 08:30 AM – 05:30 PM (IST)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive Inquiry Form (DML INSERT) -->
+                    <div style="background: var(--bg-surface); padding: 36px; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+                        <div style="margin-bottom: 24px;">
+                            <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); background: #E8F5E9; padding: 4px 10px; border-radius: var(--radius-pill); text-transform: uppercase;">
+                                Database Connected (DML INSERT)
+                            </span>
+                            <h3 style="font-size: 1.45rem; font-weight: 700; color: var(--primary-dark); margin-top: 8px;">Submit an Inquiry Ticket</h3>
+                            <p style="font-size: 0.88rem; color: var(--text-muted);">Please provide your details below. Each message is committed directly to our SQLite database table <code>inquiries</code>.</p>
+                        </div>
+
+                        <form id="contact-inquiry-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="inquiry_name">Full Name *</label>
+                                    <input type="text" id="inquiry_name" class="form-control" placeholder="e.g. Anura Jayasinghe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="inquiry_email">Email Address *</label>
+                                    <input type="email" id="inquiry_email" class="form-control" placeholder="anura@example.lk" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="inquiry_phone">Phone / WhatsApp</label>
+                                    <input type="tel" id="inquiry_phone" class="form-control" placeholder="+94 77 000 0000">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="inquiry_subject">Inquiry Subject *</label>
+                                    <input type="text" id="inquiry_subject" class="form-control" placeholder="Wholesale / Product Question" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="inquiry_message">Message Details *</label>
+                                <textarea id="inquiry_message" class="form-control" placeholder="Write your inquiry or question here..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="ri-send-plane-fill"></i> Transmit Inquiry to Database
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Frequently Asked Questions (FAQ) Accordion -->
+                <div style="margin-top: 90px;">
+                    <div class="text-center" style="margin-bottom: 40px;">
+                        <span class="section-tag">Quick Answers</span>
+                        <h2 class="section-title">Frequently Asked Questions</h2>
+                        <p class="section-subtitle center-block">Common inquiries regarding our sustainable supply chain, product grading, and islandwide delivery.</p>
+                    </div>
+
+                    <div style="max-width: 820px; margin: 0 auto;">
+                        <div class="faq-item active">
+                            <div class="faq-header">
+                                <span>What distinguishes True Ceylon Cinnamon (Alba) from supermarket cinnamon?</span>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <div class="faq-body">
+                                Over 90% of global cinnamon sold in standard supermarkets is actually <em>Cassia</em> (Cinnamomum cassia), which contains dangerously high levels of coumarin (a natural compound harmful to liver health in regular doses). UWANI harvests only pure <em>Cinnamomum verum</em> (True Ceylon Cinnamon) from southern Sri Lanka. Alba is the highest recognized grade—pencil-thin, fragrant, naturally sweet, with less than 0.004% trace coumarin.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-header">
+                                <span>How are fragile terracotta pottery and loose leaf teas packaged for delivery?</span>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <div class="faq-body">
+                                We utilize 100% biodegradable corrugated cardboard cushions, shredded recycled paper pads, and natural jute coir ties. Our terracotta clay mugs are nested securely in molded cellulose pulp trays, completely avoiding synthetic bubble wrap or styrofoam while ensuring zero transit breakage.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-header">
+                                <span>Do you support wholesale supply for specialty cafes and overseas retailers?</span>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <div class="faq-body">
+                                Yes. We supply boutique tea houses, organic restaurants, and wellness studios in Sri Lanka, Singapore, Australia, and the UK. Bulk orders from 5kg to 500kg come with organic certificates of analysis and phytosanitary documentation. Contact us using the form above for our trade catalog.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-header">
+                                <span>Where is the academic development and database host located?</span>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <div class="faq-body">
+                                This web application was created for the Web Application Development module at NSBM Green University Town (Pitipana, Homagama). The backend is powered by Node.js, Express, and an embedded SQLite database demonstrating full DML (Insert, Select, Update, Delete) architecture and GitHub version control.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <div class="logo-symbol" style="background: var(--gold); color: #112217;">U</div>
+                        <div class="brand-text-wrap">
+                            <span class="brand-title" style="color: #fff;">UWANI</span>
+                            <span class="brand-subtitle" style="color: var(--gold-light);">CEYLON ORGANICS</span>
+                        </div>
+                    </div>
+                    <p>
+                        Preserving Sri Lanka's indigenous agricultural legacy through sustainable smallholder partnerships and zero-compromise purity.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop Catalog</a></li>
+                        <li><a href="about.html">Our Heritage &amp; Story</a></li>
+                        <li><a href="contact.html">Customer Inquiries</a></li>
+                        <li><a href="admin.html">Admin Management</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Our Collections</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=ceylon-herbal-teas">Ceylon Herbal Teas</a></li>
+                        <li><a href="shop.html?category=pure-ceylon-spices">Pure Ceylon Spices</a></li>
+                        <li><a href="shop.html?category=handcrafted-homeware">Handcrafted Ceramics</a></li>
+                        <li><a href="shop.html?category=organic-coconut-wellness">Virgin Coconut Care</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Ceylon Estates &amp; Care</h4>
+                    <ul class="footer-links" style="font-size: 0.88rem; color: #CBD5CE;">
+                        <li><i class="ri-map-pin-2-line" style="color: var(--gold-light); margin-right: 6px;"></i> 42/A Horton Place, Colombo 07</li>
+                        <li><i class="ri-plant-line" style="color: var(--gold-light); margin-right: 6px;"></i> Pedro Estate, Nuwara Eliya</li>
+                        <li><i class="ri-phone-line" style="color: var(--gold-light); margin-right: 6px;"></i> +94 11 289 4500 (Concierge)</li>
+                        <li><i class="ri-mail-line" style="color: var(--gold-light); margin-right: 6px;"></i> concierge@uwani.lk</li>
+                        <li><i class="ri-shield-check-line" style="color: var(--gold-light); margin-right: 6px;"></i> 100% Certified Ceylon Organic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 UWANI Ceylon Organics (Pvt) Ltd. Handcrafted in Sri Lanka. All rights reserved.</div>
+                <div class="footer-trust-badges">
+                    <span><i class="ri-shield-check-line" style="color: var(--gold-light);"></i> Single-Origin Ceylon</span>
+                    <span class="footer-sep">•</span>
+                    <span><i class="ri-hand-heart-line" style="color: var(--gold-light);"></i> Direct Fair-Trade</span>
+                    <span class="footer-sep">•</span>
+                    <span><i class="ri-earth-line" style="color: var(--gold-light);"></i> Worldwide Air Shipping</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+        <aside class="cart-drawer" aria-label="Shopping Cart">
+            <div class="cart-header">
+                <h3 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: var(--primary-dark);">
+                    Your Basket (<span class="cart-count-badge" style="display: inline;">0</span>)
+                </h3>
+                <button class="modal-close-btn" id="cart-drawer-close" aria-label="Close Basket">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="cart-items-container" id="cart-drawer-items"></div>
+            <div class="cart-footer">
+                <div class="cart-summary-line">
+                    <span>Subtotal:</span>
+                    <strong id="cart-drawer-subtotal">$0.00</strong>
+                </div>
+                <div class="cart-total-line">
+                    <span>Estimated Total:</span>
+                    <strong id="cart-drawer-total" style="color: var(--primary);">$0.00</strong>
+                </div>
+                <button class="btn btn-primary btn-block" id="drawer-checkout-btn" style="margin-top: 18px;">
+                    Proceed to Checkout <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

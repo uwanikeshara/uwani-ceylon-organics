@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Heritage &amp; Sustainability Story | UWANI Organics</title>
+    <meta name="description" content="Learn about UWANI's mission to revive traditional regenerative Ceylon agriculture, empower rural smallholder farming families, and produce conscious luxury.">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <aside class="top-bar" aria-label="Announcement">
+        <div class="container top-bar-content">
+            <div class="top-bar-left">
+                <span><span class="top-bar-badge">ETHICS</span> Sourced 100% directly from certified smallholder forest gardens across Sri Lanka</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="currency-select-wrap">
+                    <i class="ri-global-line"></i>
+                    <select id="currency-select-top" class="currency-dropdown" aria-label="Select Currency">
+                        <option value="LKR" selected>LKR (Rs.)</option>
+                        <option value="USD">USD ($)</option>
+                    </select>
+                </div>
+                <a href="shop.html"><i class="ri-shopping-basket-line"></i> View Harvest Products</a>
+                <a href="admin.html" style="color: var(--gold-light); font-weight: 600;"><i class="ri-shield-keyhole-line"></i> Admin Portal</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Sticky Header -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand-logo" aria-label="UWANI Homepage">
+                <div class="logo-symbol">U</div>
+                <div class="brand-text-wrap">
+                    <span class="brand-title">UWANI</span>
+                    <span class="brand-subtitle">CEYLON ORGANICS</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop Catalog</a>
+                <a href="about.html" class="nav-link active">Our Heritage</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="currency-toggle-pill" id="header-currency-toggle" title="Toggle Currency (LKR / USD)" aria-label="Currency Toggle">
+                    <span class="curr-flag">🇱🇰</span>
+                    <span class="curr-code">LKR (Rs.)</span>
+                </button>
+                <button class="action-btn cart-open-btn" title="View Shopping Basket" aria-label="Cart">
+                    <i class="ri-shopping-basket-line"></i>
+                    <span class="badge-count cart-count-badge" style="display: none;">0</span>
+                </button>
+                <a href="admin.html" class="admin-portal-link" title="Open Admin Management System">
+                    <i class="ri-dashboard-line"></i>
+                    <span>Admin Panel</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="ri-menu-4-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Header -->
+        <section style="background: linear-gradient(135deg, #14251B 0%, #1A3425 100%); color: #fff; padding: 80px 0 70px;">
+            <div class="container text-center">
+                <span class="section-tag" style="background: rgba(197, 154, 69, 0.2); color: var(--gold-light);">Our Ethos</span>
+                <h1 style="color: #fff; font-size: 3rem; margin: 16px 0 16px;">The Heart of UWANI</h1>
+                <p style="color: #CAD5CE; font-size: 1.15rem; max-width: 680px; margin: 0 auto; line-height: 1.7;">
+                    A living testament to Sri Lanka's 2,500-year-old agricultural legacy. We celebrate botanical purity, fair-trade village collectives, and conscious luxury.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mission & Heritage Section -->
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                    <div>
+                        <span class="section-tag">Origin Story</span>
+                        <h2 class="section-title">Rooted in Indigenous Ceylon Agroforestry</h2>
+                        <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 20px;">
+                            For centuries before synthetic monoculture farming, Sri Lankan villagers cultivated diverse homegardens (known locally as <em>Kandyan Forest Gardens</em>). Under the natural shade of jackfruit, mahogany, and coconut palms, spices like cinnamon, cardamom, and black pepper flourished alongside wild beehives and medicinal botanicals.
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 24px;">
+                            UWANI was created to preserve and champion this bio-diverse heritage. By providing modern e-commerce access directly to rural smallholders, we ensure that indigenous cultivation techniques remain economically rewarding for future generations.
+                        </p>
+                        <div style="display: flex; gap: 24px;">
+                            <div style="border-left: 3px solid var(--primary); padding-left: 16px;">
+                                <h4 style="font-size: 1.25rem; font-weight: 700; color: var(--primary);">100%</h4>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">Direct Trade Pricing</p>
+                            </div>
+                            <div style="border-left: 3px solid var(--gold); padding-left: 16px;">
+                                <h4 style="font-size: 1.25rem; font-weight: 700; color: var(--gold-dark);">0 Chemicals</h4>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">Regenerative Soil Care</p>
+                            </div>
+                            <div style="border-left: 3px solid var(--primary-accent); padding-left: 16px;">
+                                <h4 style="font-size: 1.25rem; font-weight: 700; color: var(--primary-accent);">5% Direct</h4>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">Village Artisan Fund</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: var(--bg-surface); padding: 30px; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-md);">
+                        <img src="images/products/cinnamon-alba.svg" alt="Pure Ceylon Cinnamon" style="width: 100%; border-radius: var(--radius-md); margin-bottom: 20px;">
+                        <div style="border-top: 1px solid var(--border-light); padding-top: 18px; text-align: center;">
+                            <h4 style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--primary-dark);">Alba Cinnamon Harvest</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Mirissa Coastal Agroforestry Collective, Southern Province</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our 4 Pillars of Conscious Commerce -->
+        <section style="background: var(--bg-sand); padding: 80px 0;">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-tag">Sustainability Architecture</span>
+                    <h2 class="section-title">The Four Pillars of UWANI</h2>
+                    <p class="section-subtitle center-block">How we align with the United Nations Sustainable Development Goals and NSBM Green University’s environmental vision.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px;">
+                    <div style="background: var(--bg-surface); padding: 32px 24px; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: #E8F5E9; color: #2E7D32; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 20px;">
+                            <i class="ri-plant-line"></i>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 10px;">Regenerative Soil</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+                            Zero chemical fertilizers, no synthetic pesticides, and biological pest management via companion planting and multi-tier shading canopy.
+                        </p>
+                    </div>
+
+                    <div style="background: var(--bg-surface); padding: 32px 24px; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: #FFF8E1; color: #F57F17; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 20px;">
+                            <i class="ri-scales-3-line"></i>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 10px;">Fair Living Wages</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+                            Our growers earn 35% higher revenue than traditional auction middlemen, fostering stability and children education in tea &amp; spice regions.
+                        </p>
+                    </div>
+
+                    <div style="background: var(--bg-surface); padding: 32px 24px; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: #E3F2FD; color: #1565C0; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 20px;">
+                            <i class="ri-brush-line"></i>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 10px;">Artisan Pottery</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+                            Reviving Sri Lanka's traditional wheel-thrown terracotta and palm weave traditions with functional, durable contemporary lifestyle products.
+                        </p>
+                    </div>
+
+                    <div style="background: var(--bg-surface); padding: 32px 24px; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: #F3E5F5; color: #7B1FA2; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 20px;">
+                            <i class="ri-recycle-line"></i>
+                        </div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 10px;">Circular Packaging</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+                            All product containers are crafted from reusable tin, glass, or biodegradable unglazed terracotta clay, eliminating plastic waste.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artisan Partners Spotlight -->
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-tag">Human Craft</span>
+                    <h2 class="section-title">Meet Our Artisan Partners</h2>
+                    <p class="section-subtitle center-block">The skilled hands, watchful eyes, and generational wisdom behind every harvest.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 44px;">
+                    <div style="background: var(--bg-surface); border-radius: var(--radius-lg); border: 1px solid var(--border-light); overflow: hidden; padding: 24px;">
+                        <div style="width: 60px; height: 60px; background: var(--bg-sand); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--primary); margin-bottom: 16px;">
+                            <i class="ri-cup-line"></i>
+                        </div>
+                        <h3 style="font-size: 1.2rem; color: var(--primary-dark); margin-bottom: 4px;">Pedro Tea Pluckers</h3>
+                        <p style="font-size: 0.78rem; font-weight: 700; color: var(--gold-dark); text-transform: uppercase; margin-bottom: 12px;">Nuwara Eliya Hillsides</p>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                            Master pluckers carefully selecting the tender two leaves and a bud in morning mist, preserving delicate enzymes that yield bright amber liquor.
+                        </p>
+                    </div>
+
+                    <div style="background: var(--bg-surface); border-radius: var(--radius-lg); border: 1px solid var(--border-light); overflow: hidden; padding: 24px;">
+                        <div style="width: 60px; height: 60px; background: var(--bg-sand); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--primary); margin-bottom: 16px;">
+                            <i class="ri-scissors-2-line"></i>
+                        </div>
+                        <h3 style="font-size: 1.2rem; color: var(--primary-dark); margin-bottom: 4px;">Southern Cinnamon Peelers</h3>
+                        <p style="font-size: 0.78rem; font-weight: 700; color: var(--gold-dark); text-transform: uppercase; margin-bottom: 12px;">Mirissa &amp; Weligama</p>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                            Artisans with over four decades of peeling experience, shaving whisper-thin inner bark that is hand-telescoped into ultra-refined Alba quills.
+                        </p>
+                    </div>
+
+                    <div style="background: var(--bg-surface); border-radius: var(--radius-lg); border: 1px solid var(--border-light); overflow: hidden; padding: 24px;">
+                        <div style="width: 60px; height: 60px; background: var(--bg-sand); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--primary); margin-bottom: 16px;">
+                            <i class="ri-home-heart-line"></i>
+                        </div>
+                        <h3 style="font-size: 1.2rem; color: var(--primary-dark); margin-bottom: 4px;">Molagoda Pottery Guild</h3>
+                        <p style="font-size: 0.78rem; font-weight: 700; color: var(--gold-dark); text-transform: uppercase; margin-bottom: 12px;">Kegalle Clay Basin</p>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                            Third-generation village potters utilizing local riverbed red clay and wood-fired kilns to produce breathable, chemical-free dining wares.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section style="background: var(--primary); color: #fff; padding: 70px 0;">
+            <div class="container text-center">
+                <h2 style="font-size: 2.2rem; color: #fff; margin-bottom: 16px;">Experience the Essence of Ceylon</h2>
+                <p style="color: #D1DCD5; max-width: 600px; margin: 0 auto 30px; font-size: 1.05rem;">
+                    Support ethical Sri Lankan agriculture. Every order directly funds smallholder growers and village artisan livelihoods.
+                </p>
+                <a href="shop.html" class="btn btn-gold">Browse Full Catalog <i class="ri-arrow-right-line"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <div class="logo-symbol" style="background: var(--gold); color: #112217;">U</div>
+                        <div class="brand-text-wrap">
+                            <span class="brand-title" style="color: #fff;">UWANI</span>
+                            <span class="brand-subtitle" style="color: var(--gold-light);">CEYLON ORGANICS</span>
+                        </div>
+                    </div>
+                    <p>
+                        Preserving Sri Lanka's indigenous agricultural legacy through sustainable smallholder partnerships and zero-compromise purity.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop Catalog</a></li>
+                        <li><a href="about.html">Our Heritage &amp; Story</a></li>
+                        <li><a href="contact.html">Customer Inquiries</a></li>
+                        <li><a href="admin.html">Admin Management</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Our Collections</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=ceylon-herbal-teas">Ceylon Herbal Teas</a></li>
+                        <li><a href="shop.html?category=pure-ceylon-spices">Pure Ceylon Spices</a></li>
+                        <li><a href="shop.html?category=handcrafted-homeware">Handcrafted Ceramics</a></li>
+                        <li><a href="shop.html?category=organic-coconut-wellness">Virgin Coconut Care</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Ceylon Estates &amp; Care</h4>
+                    <ul class="footer-links" style="font-size: 0.88rem; color: #CBD5CE;">
+                        <li><i class="ri-map-pin-2-line" style="color: var(--gold-light); margin-right: 6px;"></i> 42/A Horton Place, Colombo 07</li>
+                        <li><i class="ri-plant-line" style="color: var(--gold-light); margin-right: 6px;"></i> Pedro Estate, Nuwara Eliya</li>
+                        <li><i class="ri-phone-line" style="color: var(--gold-light); margin-right: 6px;"></i> +94 11 289 4500 (Concierge)</li>
+                        <li><i class="ri-mail-line" style="color: var(--gold-light); margin-right: 6px;"></i> concierge@uwani.lk</li>
+                        <li><i class="ri-shield-check-line" style="color: var(--gold-light); margin-right: 6px;"></i> 100% Certified Ceylon Organic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 UWANI Ceylon Organics (Pvt) Ltd. Handcrafted in Sri Lanka. All rights reserved.</div>
+                <div class="footer-trust-badges">
+                    <span><i class="ri-shield-check-line" style="color: var(--gold-light);"></i> Single-Origin Ceylon</span>
+                    <span class="footer-sep">•</span>
+                    <span><i class="ri-hand-heart-line" style="color: var(--gold-light);"></i> Direct Fair-Trade</span>
+                    <span class="footer-sep">•</span>
+                    <span><i class="ri-earth-line" style="color: var(--gold-light);"></i> Worldwide Air Shipping</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer & Modals -->
+    <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+        <aside class="cart-drawer" aria-label="Shopping Cart">
+            <div class="cart-header">
+                <h3 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: var(--primary-dark);">
+                    Your Basket (<span class="cart-count-badge" style="display: inline;">0</span>)
+                </h3>
+                <button class="modal-close-btn" id="cart-drawer-close" aria-label="Close Basket">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="cart-items-container" id="cart-drawer-items"></div>
+            <div class="cart-footer">
+                <div class="cart-summary-line">
+                    <span>Subtotal:</span>
+                    <strong id="cart-drawer-subtotal">$0.00</strong>
+                </div>
+                <div class="cart-total-line">
+                    <span>Estimated Total:</span>
+                    <strong id="cart-drawer-total" style="color: var(--primary);">$0.00</strong>
+                </div>
+                <button class="btn btn-primary btn-block" id="drawer-checkout-btn" style="margin-top: 18px;">
+                    Proceed to Checkout <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>
+        </aside>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
