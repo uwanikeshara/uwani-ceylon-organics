@@ -30,7 +30,7 @@ The platform provides a direct-to-consumer digital commerce experience for singl
 ## Project Structure
 
 ```text
-UWANI 2/
+UWANI /
 ├── database/
 │   ├── schema.sql         # Database schema (5 relational tables)
 │   ├── seed.js            # Initial seed population script
