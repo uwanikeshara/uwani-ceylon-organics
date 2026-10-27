@@ -3,8 +3,9 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
-# Internal reports and helper scripts
+# Internal personal guidelines, reports, and helper scripts
 reports/
+guidelines.md
 STUDENT_SUBMISSION_GUIDE.md
 build_docx_report.py
 generate_assets.js
